@@ -16,6 +16,8 @@
         <module>04.model</module>
         <module>05.model</module>
         <module>06.model</module>
+        <module>07.model</module>
+        <module>08.model</module>
     </modules>
     <properties>
 <mysql.version>5.1.38</mysql.version>
