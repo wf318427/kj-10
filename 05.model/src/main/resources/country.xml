@@ -1,0 +1,13 @@
+<country>
+  <name>中国</name>
+  <provinces>
+    <province>
+      <name>内蒙古</name>
+      <provCity>呼和浩特市</provCity>
+    </province>
+    <province>
+      <name>山西省</name>
+      <provCity>太原市</provCity>
+    </province>
+  </provinces>
+</country>

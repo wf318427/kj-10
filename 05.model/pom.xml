@@ -52,6 +52,16 @@
             <artifactId>oracle-driver-ojdbc</artifactId>
             <version>12.1.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>xpp3</groupId>
+            <artifactId>xpp3_min</artifactId>
+            <version>1.1.4c</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.3</version>
+        </dependency>
     </dependencies>
 
 <!--
