@@ -8,14 +8,14 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * Created by Administrator on 17.11.18.
  */
-@XmlAccessorType(XmlAccessType.FIELD)
+//@XmlAccessorType(XmlAccessType.FIELD)
 //@XmlType(propOrder = { "name", "provCity" })
 public class Province {
 
-    @XmlElement(name = "province_name")
+    //@XmlElement(name = "province_name")
     private String name;
 
-    @XmlElement(name = "prov_city")
+    //@XmlElement(name = "prov_city")
     private String provCity;
 
     /**

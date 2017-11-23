@@ -57,14 +57,18 @@ public class TestCase7 {
         person.setEmp_name("liubei");
         person.setEmp_id(1);
         List list=new ArrayList();
+        list.add("a");
         list.add(emp);
         list.add(person);
+        Country country=new Country();
+        country.setProvinceList(list);
         XStream stream=new XStream();
+        stream.alias("country",Country.class);
         stream.alias("emp",Emp.class);
         stream.alias("person",Person.class);
         stream.aliasField("id",Person.class,"emp_id");
         stream.aliasField("name",Person.class,"emp_name");
-        String s =stream.toXML(list);
+        String s =stream.toXML(country);
         System.out.println(s);
 
     }

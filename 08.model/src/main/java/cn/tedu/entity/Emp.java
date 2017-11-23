@@ -1,10 +1,15 @@
 package cn.tedu.entity;
 
+import javax.xml.bind.annotation.*;
+
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by Administrator on 17.11.2.
  */
+//@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
 public class Emp implements Serializable{
     private static final long serialVersionUID = 7942140833883741981L;
     private String name;
@@ -12,8 +17,14 @@ public class Emp implements Serializable{
     private String Idtype;
     private String IdNo;
     private String sex;
-
-    public String getName() {
+    private List<Person> list;
+    //@XmlElementWrapper(name="Person")// 集合属性的父节点
+    //@XmlElement(name="student")        // 成员节点
+    public List<Person> getList() {
+        return list;
+    } public void setList(List<Person> list) {
+        this.list = list;
+    } public String getName() {
         return name;
     }
 

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Administrator on 17.11.18.
  */
-@XmlAccessorType(XmlAccessType.FIELD)
+//@XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
 public class Country {
 
@@ -14,7 +14,7 @@ public class Country {
     private String name;
 
     //@XmlElementWrapper(name = "provinces")
-    @XmlElement(name = "province")
+    //@XmlElement(name = "province")
     private List<Province> provinceList;
 
     /**
